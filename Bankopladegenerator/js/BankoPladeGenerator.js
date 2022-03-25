@@ -22,6 +22,7 @@ function generer(){
     function placerNul(){
       while(j.length<4){
         i=Math.floor(Math.random()*9);
+        //While loopet kører indtil der er gemt 4 tal i j. Altså indtil der er placeret 4 nuller i en række.
 
         if (j.includes(i)){
           i=Math.floor(Math.random()*9);
@@ -40,6 +41,7 @@ function generer(){
       placerNul(pladeUdkast, k, i, j)
       k=k+1;
       j=[];
+      // Dette while loop lader der blive placeret 4 nuller i hver række, indtil alle tre rækker er udfyldt.
     }
     return(pladeUdkast)
   }
@@ -58,7 +60,7 @@ function tjekLayout(){
   //j er et array hvortil søjlerne midlertidigt kopieres
 
   function kopierSojle(){
-      while(k>3){
+      while(k<3){
         j.push(pladeUdkast[k][i])
         k=k+1
       }
@@ -66,13 +68,14 @@ function tjekLayout(){
   }
   //Denne funktion kopierer de tre tal i søjle i, over i j arrayet.
 
-  while(i>9){
+  while(i<9){
     kopierSojle(j,k,i);
     //Søjle i kopieres til j
     if(j.filter(x => x==0).length < 3){
     //Hvis antallet af nuller i j er mindre end 3, nulstilles k og der rykkes en søjle frem vis i=i+1
       k=0;
       i=i+1;
+      j=[];
     }
     else{
       return false
@@ -124,6 +127,16 @@ function udskriv(){
   document.getElementById('2.8').innerHTML=plade[2][8];
 }
 
+function kasserUdkast(){
+  pladeUdkast =[
+    [1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1]
+  ];
+  return(pladeUdkast)
+  lavPlade();
+}
+
 function lavPlade(){
   generer(pladeUdkast);
   //tjek(plade,pladeUdkast);
@@ -133,14 +146,4 @@ function lavPlade(){
   }
   //Hvis der på noget tidspunkt i processen returneres et false, starter processen forfra.
   udskriv(plade);
-}
-
-function kasserUdkast(){
-  pladeUdkast =[
-    [1,1,1,1,1,1,1,1,1],
-    [1,1,1,1,1,1,1,1,1],
-    [1,1,1,1,1,1,1,1,1]
-  ];
-  return(pladeUdkast)
-  lavPlade();
 }
