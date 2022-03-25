@@ -134,16 +134,13 @@ function kasserUdkast(){
     [1,1,1,1,1,1,1,1,1]
   ];
   return(pladeUdkast)
-  lavPlade();
 }
 
 function lavPlade(){
   generer(pladeUdkast);
-  //tjek(plade,pladeUdkast);
-
-  if((generer()==false)||(tjekLayout()==false)){
+  while(tjekLayout()==false){
     kasserUdkast(pladeUdkast);
+    generer(pladeUdkast);
   }
-  //Hvis der på noget tidspunkt i processen returneres et false, starter processen forfra.
   udskriv(plade);
-}
+  }
