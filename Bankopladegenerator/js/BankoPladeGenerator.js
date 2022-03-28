@@ -46,6 +46,9 @@ function generer(){
     return(pladeUdkast)
   }
 
+  function tal(){
+
+  }
   layout(pladeUdkast);
   tjekLayout(pladeUdkast);
   return(pladeUdkast)
