@@ -81,7 +81,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -104,7 +104,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -127,7 +127,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -150,7 +150,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -173,7 +173,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -196,7 +196,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -219,7 +219,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -242,7 +242,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
@@ -265,7 +265,7 @@ function generer(){
         }
         q=q.sort();
         for(let r=0; r<3; r++){
-          if(pladeUdkast[r][s]==1){
+          if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
             q.shift();
           }
