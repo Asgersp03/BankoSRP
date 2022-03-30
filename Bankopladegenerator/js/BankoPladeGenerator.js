@@ -70,16 +70,19 @@ function generer(){
       if(s==0){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log("s0= "+l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
-          if(q.includes(i)){
+          while(q.includes(i)){
+            console.log("i findes i q. i er "+i)
             i=Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
           }
-          else{
             q.push(i);
-          }
+            console.log("i= "+i)
+            console.log("q0a= "+q)
         }
         q=q.sort();
+        console.log("q0= "+q)
         for(let r=0; r<3; r++){
           if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
@@ -88,19 +91,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==1){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (19 - 10 + 1) ) + 10;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (19 - 10 + 1) ) + 10;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -111,19 +114,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==2){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (29 - 20 + 1) ) + 20;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (29 - 20 + 1) ) + 20;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -134,19 +137,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==3){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (39 - 30 + 1) ) + 30;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (39 - 30 + 1) ) + 30;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -157,19 +160,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==4){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (49 - 40 + 1) ) + 40;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (49 - 40 + 1) ) + 40;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -180,19 +183,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==5){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (59 - 50 + 1) ) + 50;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (59 - 50 + 1) ) + 50;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -203,19 +206,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==6){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (69 - 60 + 1) ) + 60;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (69 - 60 + 1) ) + 60;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -226,19 +229,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==7){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (79 - 70 + 1) ) + 70;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (79 - 70 + 1) ) + 70;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -249,19 +252,19 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
       if(s==8){
         kopierSoljeTal(r,s,j);
         let l = j.filter(x => x==1).length;
+        console.log(l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (90 - 80 + 1) ) + 80;
-          if(q.includes(i)){
+          while(q.includes(i)){
             i=Math.floor(Math.random() * (90 - 80 + 1) ) + 80;
           }
-          else{
             q.push(i);
-          }
         }
         q=q.sort();
         for(let r=0; r<3; r++){
@@ -272,6 +275,7 @@ function generer(){
         }
         r=0;
         j=[];
+        q=[];
         s++;
       }
     }
