@@ -1,6 +1,6 @@
 let pladeUdkast =[
   [1,1,1,1,1,1,1,1,1],
-  [1,1,1,1,1,1,1,1,],
+  [1,1,1,1,1,1,1,1,1],
   [1,1,1,1,1,1,1,1,1]
 ];
 
@@ -17,12 +17,12 @@ function generer(){
     let j=[];
     //j er et array hvori de udtrukkede værdier af i gemmes, for at undgå dubletter.
     let i=Math.floor(Math.random()*9);
-    //i er et tilfældigt tal imellem 0 og 8
+    //i er et tilfældigt Numre imellem 0 og 8
 
     function placerNul(){
       while(j.length<4){
         i=Math.floor(Math.random()*9);
-        //While loopet kører indtil der er gemt 4 tal i j. Altså indtil der er placeret 4 nuller i en række.
+        //While loopet kører indtil der er gemt 4 Numre i j. Altså indtil der er placeret 4 nuller i en række.
 
         if (j.includes(i)){
           i=Math.floor(Math.random()*9);
@@ -45,7 +45,7 @@ function generer(){
     }
     return(pladeUdkast)
   }
-  function tal(){
+  function numre(){
     let r=0;
     //r er rækkenummeret
     let s=0;
@@ -53,11 +53,11 @@ function generer(){
     let j=[];
     //j er et array hvortil søjlerne midlertidigt kopieres.
     let i=1;
-    //i er den variable hvori de tilfældigt genrerede tal vil blive gemt.
+    //i er den variable hvori de tilfældigt genrerede Numre vil blive gemt.
     let q=[];
-    //q bruges som en cache til at undgå dubletter i de generede tilfældige tal.
+    //q bruges som en cache til at undgå dubletter i de generede tilfældige Numre.
 
-    function kopierSoljeTal(){
+    function kopierSoljeNumre(){
       while(r<3){
         j.push(pladeUdkast[r][s]);
         r++;
@@ -68,21 +68,16 @@ function generer(){
     //Denne funktion kopierer søjle s over i j
     while(s<9){
       if(s==0){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
-        console.log("s0= "+l)
         for(let z=0; z<l; z++){
           i=Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
           while(q.includes(i)){
-            console.log("i findes i q. i er "+i)
             i=Math.floor(Math.random() * (9 - 1 + 1) ) + 1;
           }
             q.push(i);
-            console.log("i= "+i)
-            console.log("q0a= "+q)
         }
         q=q.sort();
-        console.log("q0= "+q)
         for(let r=0; r<3; r++){
           if((pladeUdkast[r][s]==1)&&(q.length!==0)){
             pladeUdkast[r][s]=q.slice(0,1);
@@ -95,7 +90,7 @@ function generer(){
         s++;
       }
       if(s==1){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -118,7 +113,7 @@ function generer(){
         s++;
       }
       if(s==2){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -141,7 +136,7 @@ function generer(){
         s++;
       }
       if(s==3){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -164,7 +159,7 @@ function generer(){
         s++;
       }
       if(s==4){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -187,7 +182,7 @@ function generer(){
         s++;
       }
       if(s==5){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -210,7 +205,7 @@ function generer(){
         s++;
       }
       if(s==6){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -233,7 +228,7 @@ function generer(){
         s++;
       }
       if(s==7){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -256,7 +251,7 @@ function generer(){
         s++;
       }
       if(s==8){
-        kopierSoljeTal(r,s,j);
+        kopierSoljeNumre(r,s,j);
         let l = j.filter(x => x==1).length;
         console.log(l)
         for(let z=0; z<l; z++){
@@ -288,7 +283,7 @@ function generer(){
     kasserUdkast(pladeUdkast);
     layout(pladeUdkast);
   }
-  tal(pladeUdkast);
+  numre(pladeUdkast);
   return(pladeUdkast)
 }
 
@@ -307,13 +302,13 @@ function tjekLayout(){
       }
     return(j)
   }
-  //Denne funktion kopierer de tre tal i søjle i, over i j arrayet.
+  //Denne funktion kopierer de tre Numre i søjle i, over i j arrayet.
 
   while(s<9){
     kopierSojle(j,r,s);
     //Søjle i kopieres til j
     if(j.filter(x => x==0).length < 3){
-    //Hvis antallet af nuller i j er mindre end 3, nulstilles k og der rykkes en søjle frem vis i=i+1
+    //Hvis anNumrelet af nuller i j er mindre end 3, nulstilles k og der rykkes en søjle frem vis i=i+1
       r=0;
       s++;
       j=[];
