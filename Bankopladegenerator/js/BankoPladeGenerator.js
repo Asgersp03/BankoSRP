@@ -4,12 +4,6 @@ let pladeUdkast =[
   [1,1,1,1,1,1,1,1,1]
 ];
 
-let plade = [
-  [1,1,1,1,1,1,1,1,1],
-  [1,1,1,1,1,1,1,1,1],
-  [1,1,1,1,1,1,1,1,1]
-];
-
 function generer(){
   function layout(){
     let r=0;
@@ -322,197 +316,193 @@ function tjekLayout(){
 }
 
 function udskriv(){
-  for (var i = 0; i < pladeUdkast.length; i++)
-    plade[i] = pladeUdkast[i].slice();
-  //Indholdet af pladeUdkast kopieres over i plade
-
-  if(plade[0][0]==0){
+  if(pladeUdkast[0][0]==0){
     document.getElementById('0.0').innerHTML=" "
   }
   else{
-      document.getElementById('0.0').innerHTML=plade[0][0];
+      document.getElementById('0.0').innerHTML=pladeUdkast[0][0];
   }
 
-  if(plade[0][1]==0){
+  if(pladeUdkast[0][1]==0){
     document.getElementById('0.1').innerHTML=" "
   }
   else{
-    document.getElementById('0.1').innerHTML=plade[0][1];
+    document.getElementById('0.1').innerHTML=pladeUdkast[0][1];
   }
 
-  if(plade[0][2]==0){
+  if(pladeUdkast[0][2]==0){
     document.getElementById('0.2').innerHTML=" "
   }
   else{
-    document.getElementById('0.2').innerHTML=plade[0][2];
+    document.getElementById('0.2').innerHTML=pladeUdkast[0][2];
   }
 
-  if(plade[0][3]==0){
+  if(pladeUdkast[0][3]==0){
     document.getElementById('0.3').innerHTML=" "
   }
   else{
-    document.getElementById('0.3').innerHTML=plade[0][3];
+    document.getElementById('0.3').innerHTML=pladeUdkast[0][3];
   }
 
-  if(plade[0][4]==0){
+  if(pladeUdkast[0][4]==0){
     document.getElementById('0.4').innerHTML=" "
   }
   else{
-    document.getElementById('0.4').innerHTML=plade[0][4];
+    document.getElementById('0.4').innerHTML=pladeUdkast[0][4];
   }
 
-  if(plade[0][5]==0){
+  if(pladeUdkast[0][5]==0){
     document.getElementById('0.5').innerHTML=" "
   }
   else{
-    document.getElementById('0.5').innerHTML=plade[0][5];
+    document.getElementById('0.5').innerHTML=pladeUdkast[0][5];
   }
 
-  if(plade[0][6]==0){
+  if(pladeUdkast[0][6]==0){
     document.getElementById('0.6').innerHTML=" "
   }
   else{
-    document.getElementById('0.6').innerHTML=plade[0][6];
+    document.getElementById('0.6').innerHTML=pladeUdkast[0][6];
   }
 
-  if(plade[0][7]==0){
+  if(pladeUdkast[0][7]==0){
     document.getElementById('0.7').innerHTML=" "
   }
   else{
-    document.getElementById('0.7').innerHTML=plade[0][7];
+    document.getElementById('0.7').innerHTML=pladeUdkast[0][7];
   }
 
-  if(plade[0][8]==0){
+  if(pladeUdkast[0][8]==0){
     document.getElementById('0.8').innerHTML=" "
   }
   else{
-    document.getElementById('0.8').innerHTML=plade[0][8];
+    document.getElementById('0.8').innerHTML=pladeUdkast[0][8];
   }
 
-  if(plade[1][0]==0){
+  if(pladeUdkast[1][0]==0){
     document.getElementById('1.0').innerHTML=" "
   }
   else{
-    document.getElementById('1.0').innerHTML=plade[1][0];
+    document.getElementById('1.0').innerHTML=pladeUdkast[1][0];
   }
 
-  if(plade[1][1]==0){
+  if(pladeUdkast[1][1]==0){
     document.getElementById('1.1').innerHTML=" "
   }
   else{
-    document.getElementById('1.1').innerHTML=plade[1][1];
+    document.getElementById('1.1').innerHTML=pladeUdkast[1][1];
   }
 
-  if(plade[1][2]==0){
+  if(pladeUdkast[1][2]==0){
     document.getElementById('1.2').innerHTML=" "
   }
   else{
-    document.getElementById('1.2').innerHTML=plade[1][2];
+    document.getElementById('1.2').innerHTML=pladeUdkast[1][2];
   }
 
-  if(plade[1][3]==0){
+  if(pladeUdkast[1][3]==0){
     document.getElementById('1.3').innerHTML=" "
   }
   else{
-    document.getElementById('1.3').innerHTML=plade[1][3];
+    document.getElementById('1.3').innerHTML=pladeUdkast[1][3];
   }
 
-  if(plade[1][4]==0){
+  if(pladeUdkast[1][4]==0){
     document.getElementById('1.4').innerHTML=" "
   }
   else{
-    document.getElementById('1.4').innerHTML=plade[1][4];
+    document.getElementById('1.4').innerHTML=pladeUdkast[1][4];
   }
 
-  if(plade[1][5]==0){
+  if(pladeUdkast[1][5]==0){
     document.getElementById('1.5').innerHTML=" "
   }
   else{
-    document.getElementById('1.5').innerHTML=plade[1][5];
+    document.getElementById('1.5').innerHTML=pladeUdkast[1][5];
   }
 
-  if(plade[1][6]==0){
+  if(pladeUdkast[1][6]==0){
     document.getElementById('1.6').innerHTML=" "
   }
   else{
-    document.getElementById('1.6').innerHTML=plade[1][6];
+    document.getElementById('1.6').innerHTML=pladeUdkast[1][6];
   }
 
-  if(plade[1][7]==0){
+  if(pladeUdkast[1][7]==0){
     document.getElementById('1.7').innerHTML=" "
   }
   else{
-    document.getElementById('1.7').innerHTML=plade[1][7];
+    document.getElementById('1.7').innerHTML=pladeUdkast[1][7];
   }
 
-  if(plade[1][8]==0){
+  if(pladeUdkast[1][8]==0){
     document.getElementById('1.8').innerHTML=" "
   }
   else{
-    document.getElementById('1.8').innerHTML=plade[1][8];
+    document.getElementById('1.8').innerHTML=pladeUdkast[1][8];
   }
 
-  if(plade[2][0]==0){
+  if(pladeUdkast[2][0]==0){
     document.getElementById('2.0').innerHTML=" "
   }
   else{
-    document.getElementById('2.0').innerHTML=plade[2][0];
+    document.getElementById('2.0').innerHTML=pladeUdkast[2][0];
   }
 
-  if(plade[2][1]==0){
+  if(pladeUdkast[2][1]==0){
     document.getElementById('2.1').innerHTML=" "
   }
   else{
-    document.getElementById('2.1').innerHTML=plade[2][1];
+    document.getElementById('2.1').innerHTML=pladeUdkast[2][1];
   }
 
-  if(plade[2][2]==0){
+  if(pladeUdkast[2][2]==0){
     document.getElementById('2.2').innerHTML=" "
   }
   else{
-    document.getElementById('2.2').innerHTML=plade[2][2];
+    document.getElementById('2.2').innerHTML=pladeUdkast[2][2];
   }
 
-  if(plade[2][3]==0){
+  if(pladeUdkast[2][3]==0){
     document.getElementById('2.3').innerHTML=" "
   }
   else{
-    document.getElementById('2.3').innerHTML=plade[2][3];
+    document.getElementById('2.3').innerHTML=pladeUdkast[2][3];
   }
 
-  if(plade[2][4]==0){
+  if(pladeUdkast[2][4]==0){
     document.getElementById('2.4').innerHTML=" "
   }
   else{
-    document.getElementById('2.4').innerHTML=plade[2][4];
+    document.getElementById('2.4').innerHTML=pladeUdkast[2][4];
   }
 
-  if(plade[2][5]==0){
+  if(pladeUdkast[2][5]==0){
     document.getElementById('2.5').innerHTML=" "
   }
   else{
-    document.getElementById('2.5').innerHTML=plade[2][5];
+    document.getElementById('2.5').innerHTML=pladeUdkast[2][5];
   }
 
-  if(plade[2][6]==0){
+  if(pladeUdkast[2][6]==0){
     document.getElementById('2.6').innerHTML=" "
   }
   else{
-    document.getElementById('2.6').innerHTML=plade[2][6];
+    document.getElementById('2.6').innerHTML=pladeUdkast[2][6];
   }
 
-  if(plade[2][7]==0){
+  if(pladeUdkast[2][7]==0){
     document.getElementById('2.7').innerHTML=" "
   }
   else{
-    document.getElementById('2.7').innerHTML=plade[2][7];
+    document.getElementById('2.7').innerHTML=pladeUdkast[2][7];
   }
 
-  if(plade[2][8]==0){
+  if(pladeUdkast[2][8]==0){
     document.getElementById('2.8').innerHTML=" "
   }
   else{
-    document.getElementById('2.8').innerHTML=plade[2][8];
+    document.getElementById('2.8').innerHTML=pladeUdkast[2][8];
   }
 
 }
@@ -527,6 +517,7 @@ function kasserUdkast(){
 }
 
 function lavPlade(){
+  kasserUdkast(pladeUdkast);
   generer(pladeUdkast);
-  udskriv(plade);
+  udskriv(pladeUdkast);
 }
